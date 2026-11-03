@@ -31,7 +31,7 @@ A **Random Forest** was chosen over a deep neural network for three reasons:
 The Random Forest achieved an overall accuracy of 95%+. 
 Crucially, **Feature Importance** analysis revealed that `RMS` and `Variance` were the most critical indicators of mechanical imbalance. `Crest Factor` was slightly less useful for this specific continuous fault.
 
-*[Insert Confusion Matrix / Feature Importance Plot here]*
+
 
 ## 4. Edge Deployment
 Because the Random Forest is just a series of `if/else` thresholds, the ESP32 firmware doesn't need a heavy ML library. The trained model was manually translated into C++ logic based on the decision tree paths:
